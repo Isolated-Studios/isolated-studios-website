@@ -73,11 +73,12 @@ body {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  float: none;
+  float: center;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -110,7 +111,6 @@ section {
       line-height: 0;
       font-size: 2rem;
       padding-left: 20%;
-
 }
 
 .section1 {
@@ -124,7 +124,7 @@ section {
       background-size: cover;
 }
 .section3 {
-      background-image: url(../images/image3.png);
+      background-image: url(../images/image4.png);
       background-repeat: no-repeat;
       background-size: cover;
 }
