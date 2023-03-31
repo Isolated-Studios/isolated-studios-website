@@ -1,4 +1,4 @@
-# isolated-studios-website
+# unstable-isolated-studios-website
 repository for the website
 
 ⚠️ please read `license.md` before proceeding. ⚠️
