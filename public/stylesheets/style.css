@@ -53,41 +53,54 @@ body {
 }
 
 .dropdown {
-  float: left;
-  overflow: hidden;
+      float: left;
+      overflow: hidden;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit; /* Important for vertical align on mobile phones */
+      margin: 0; /* Important for vertical align on mobile phones */
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      z-index: 1;
 }
 
 .dropdown-content a {
-  float: center;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+}
+
+.dropdown-content:hover {
+      background: linear-gradient(to right,
+                  var(--purple),
+                  var(--violet),
+                  var(--lilac),
+                  var(--purple));
+    -webkit-transition: background 1000ms linear;
+    -ms-transition: background 1000ms linear;
+    transition: background 1000ms linear;
+}
+
+.dropdown-content a:hover {
+      color: white;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+      display: block;
 }
 
 footer {
