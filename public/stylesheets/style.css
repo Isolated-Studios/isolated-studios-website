@@ -90,6 +90,10 @@ body {
   background-color: #ddd;
 }
 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 footer {
       min-width: 100vw;
       background-color: black;
