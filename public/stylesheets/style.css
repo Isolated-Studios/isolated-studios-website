@@ -91,6 +91,11 @@ section {
       background-repeat: no-repeat;
       background-size: cover;
 }
+.section4 {
+      background-image: url(../images/image4.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
 
 .divider {
       min-width: 100vw;
