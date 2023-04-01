@@ -9,6 +9,7 @@
       --lilac: #BE9ABE;
 }
 
+/* animations for elements with the 'magic' class  */
 @keyframes background-pan {
       from {
             background-position: 0% center;
@@ -180,6 +181,8 @@ p>.magic2:hover {
 }
 
 
+/* these styles area applied when the screen is smaller than 600px */
+/* mobile compatability */
 @media only screen and (max-width: 600px) {
       section {
             display: flex;
