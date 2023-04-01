@@ -7,6 +7,11 @@
       --purple: #7925C7;
       --violet: #8B00F7;
       --lilac: #BE9ABE;
+
+      --green1: #75bf7a;
+      --green2: #6ace19;
+      --green3: #00ff1e;
+
 }
 
 /* animations for elements with the 'magic' class  */
@@ -36,10 +41,10 @@ body {
 .navbar {
       min-width: 100vw;
       background: linear-gradient(to right,
-      var(--purple),
-      var(--violet),
-      var(--lilac),
-      var(--purple));
+                  var(--purple),
+                  var(--violet),
+                  var(--lilac),
+                  var(--purple));
       gap: 2rem;
       display: flex;
       align-items: center;
@@ -65,8 +70,10 @@ body {
       color: white;
       padding: 14px 16px;
       background-color: inherit;
-      font-family: inherit; /* Important for vertical align on mobile phones */
-      margin: 0; /* Important for vertical align on mobile phones */
+      font-family: inherit;
+      /* Important for vertical align on mobile phones */
+      margin: 0;
+      /* Important for vertical align on mobile phones */
 }
 
 .dropdown-content {
@@ -117,16 +124,19 @@ section {
       background-repeat: no-repeat;
       background-size: cover;
 }
+
 .section2 {
       background-image: url(../images/image2.png);
       background-repeat: no-repeat;
       background-size: cover;
 }
+
 .section3 {
       background-image: url(../images/image4.png);
       background-repeat: no-repeat;
       background-size: cover;
 }
+
 .section4 {
       background-image: url(../images/image4.png);
       background-repeat: no-repeat;
@@ -176,10 +186,28 @@ p>.magic2 {
       transition-duration: 0.3s;
 }
 
+.magic3 {
+      font-weight: bolder;
+      animation: background-pan 3s linear infinite;
+      background: linear-gradient(to right,
+                  var(--green1),
+                  var(--green2),
+                  var(--green3),
+                  var(--green1));
+      background-size: 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      white-space: nowrap;
+      transition-duration: 0.3s;
+}
+
 p>.magic2:hover {
       letter-spacing: 1px;
 }
 
+.magic3:hover {
+      letter-spacing: 1px;
+}
 
 /* these styles area applied when the screen is smaller than 600px */
 /* mobile compatability */
@@ -194,6 +222,7 @@ p>.magic2:hover {
             line-height: normal;
             font-size: 1.5rem;
       }
+
       h1 {
             font-size: 1.5rem;
       }
