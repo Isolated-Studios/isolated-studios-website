@@ -119,6 +119,29 @@ section {
       padding-left: 20%;
 }
 
+.center {
+      align-items: center;
+      justify-content: center;
+      padding-left: 0%;
+}
+
+.tall-section {
+      min-height: 200dvh;
+}
+
+.pointer {
+      transition-duration: 0.3s;
+}
+
+.pointer-e {
+      transition-duration: 0.3s;
+}
+
+.pointer:hover .pointer-e {
+      letter-spacing: 1rem;
+      font-size: 2rem;
+}
+
 .section1 {
       background-image: url(../images/image1.png);
       background-repeat: no-repeat;
