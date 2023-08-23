@@ -127,7 +127,7 @@ section {
 
 .games-container {
       display: grid;
-      height: 90vh;
+      height: 80vh;
       width: 80vw;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
@@ -161,6 +161,12 @@ section {
       text-align: center;
       background-color: rgba(0,0,0,1);
       border-radius: 15px;
+      border: 1px solid #fff
+      transition: 0.1s all ease
+}
+
+.games-container div:hover {
+      transform: scale(1.04)
 }
 
 #game1 {
