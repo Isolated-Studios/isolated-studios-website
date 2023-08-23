@@ -154,7 +154,7 @@ section {
       transform: translateX(-50%);
 }
 
-.games-container a div {
+.games-container a {
       position: relative;
       line-height: normal;
       margin: 25px;
@@ -165,7 +165,7 @@ section {
       transition: 0.1s all ease;
 }
 
-.games-container a div:hover {
+.games-container a:hover {
       transform: scale(1.04);
 }
 
