@@ -139,14 +139,14 @@ section {
 
 }
 
-.games-container div p {
+.games-container a div p {
       font-size: 24px;
       position: absolute;
       bottom: 15%;
       left: 50%;
       transform: translateX(-50%);
 }
-.games-container div span {
+.games-container a div span {
       font-size: 12px;
       position: absolute;
       bottom: 5%;
@@ -154,7 +154,7 @@ section {
       transform: translateX(-50%);
 }
 
-.games-container div {
+.games-container a {
       position: relative;
       line-height: normal;
       margin: 25px;
@@ -165,7 +165,7 @@ section {
       transition: 0.1s all ease;
 }
 
-.games-container div:hover {
+.games-container a:hover {
       transform: scale(1.04);
 }
 
@@ -196,7 +196,7 @@ section {
       background-size: cover;
 }
 
-.games-container div a {
+.games-container div .play-button {
       text-decoration: none;
       background-color: black;
       color: white;
