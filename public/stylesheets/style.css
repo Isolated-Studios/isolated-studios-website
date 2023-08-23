@@ -14,6 +14,7 @@
 
 }
 
+/* animations for elements with the 'magic' class  */
 @keyframes background-pan {
       from {
             background-position: 0% center;
@@ -118,6 +119,117 @@ section {
       padding-left: 20%;
 }
 
+.center {
+      align-items: center;
+      justify-content: center;
+      padding-left: 0%;
+}
+
+.games-container {
+      display: grid;
+      height: 80vh;
+      width: 80vw;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+
+      grid-gap: 20px;
+
+      grid-template-areas: 
+      'g1 g2 g3';
+
+}
+
+.games-container div p {
+      font-size: 24px;
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+}
+.games-container div span {
+      font-size: 12px;
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+}
+
+.games-container div {
+      position: relative;
+      line-height: normal;
+      margin: 25px;
+      text-align: center;
+      background-color: rgba(0,0,0,1);
+      border-radius: 15px;
+      border: 1px solid #fff
+      transition: 0.1s all ease
+}
+
+.games-container div:hover {
+      transform: scale(1.04)
+}
+
+#game1 {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1) 70%),
+      url("../images/game1.png");
+      /* background-image: ; */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+#game2 {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1) 70%),
+      url("../images/cardimage1.png");
+      /* background-image: ; */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+#game3 {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1) 70%),
+      url("../images/game3.png");
+      /* background-image: ; */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.games-container div a {
+      text-decoration: none;
+      background-color: black;
+      color: white;
+      padding: 15px;
+      border: 1px solid white;
+      font-size: 16px;
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+}
+
+.disabledbutton {
+      opacity: 0.5;
+}
+
+.tall-section {
+      min-height: 200dvh;
+}
+
+.pointer {
+      transition-duration: 0.3s;
+}
+
+.pointer-e {
+      transition-duration: 0.3s;
+}
+
+.pointer:hover .pointer-e {
+      letter-spacing: 1rem;
+      font-size: 2rem;
+}
+
 .section1 {
       background-image: url(../images/image1.png);
       background-repeat: no-repeat;
@@ -208,6 +320,8 @@ p>.magic2:hover {
       letter-spacing: 1px;
 }
 
+/* these styles area applied when the screen is smaller than 600px */
+/* mobile compatability */
 @media only screen and (max-width: 600px) {
       section {
             display: flex;
