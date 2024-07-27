@@ -38,6 +38,15 @@ body {
       overflow-x: hidden;
 }
 
+
+a {
+      color: white;
+}
+
+.forbid_link {
+      color: rgb(255, 255, 255);
+}
+
 .navbar {
       min-width: 100vw;
       background: linear-gradient(to right,
@@ -199,9 +208,9 @@ section {
 .games-container div .play-button {
       text-decoration: none;
       background-color: black;
-      color: white;
+      color: rgb(169, 172, 255);
       padding: 15px;
-      border: 1px solid white;
+      border: 1px solid rgb(169, 172, 255);
       font-size: 16px;
       position: absolute;
       bottom: 10%;
@@ -211,6 +220,8 @@ section {
 
 .disabledbutton {
       opacity: 0.5;
+      color: white;
+      border: 1px solid white;
 }
 
 .tall-section {
